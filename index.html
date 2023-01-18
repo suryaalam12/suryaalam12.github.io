@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio Andi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+        .container1 {
+          position: relative;
+          width: 100%;
+        }
+        .image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: lightgray;
+        }
+
+        .container1:hover .overlay {
+          opacity: 1;
+        }
+
+        .text1 {
+          color: black;
+          font-family:monospace;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li><a href="#experiences">Portofolio Pekerjaan</a></li>
+                        <li><a href="#skills">Kemampuan</a></li>
+				        <li><a href="img/cv_andisuryaalam.pdf" target="_blank">Unduh CV</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+        <p style="font-family:'Bebas Neue', cursive; font-size: 25px;font-weight:lighter;color: black">Andi Surya ALam</p>
+        
+	</div>
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<b style="font-family:'Bebas Neue', cursive; font-size: 25px;font-weight: lighter;color: black">Hasil Perkerjaan</b>
+			<ul class="work-list">
+			    <li style="font-family:'Bebas Neue', cursive; font-size: 20px;font-weight: lighter;color: black">Retifikasi Polygon PBB Berdasarkan Citra Satelit</li>
+				<li>- Mengkonversi bidang objek PBB dari format CAD/Mapinfo (undefined coordinate system) ke format Shapefile sebanyak 306 file menggunakan QGIS.</li>
+				<li>- Meluruskan dan mengkoreksi posisi bidang objek PBB ke posisi sebenarnya berdasarkan kenampakan bentuk rupa bumi berdasarkan citra satelit.</li>
+				<li>- Menggunakan bantuan tools di ArcGIS yaitu Spatial Adjusment dengan sangat teliti agar blok peta PBB tepat pada posisi sebenarnya.</li>
+				<br>
+				<li><img style="border-bottom-style: solid" src="img/JADI.jpg"></li>
+			</ul>
+			<ul class="work-list"> 
+			    <li style="font-family:'Bebas Neue', cursive; font-size: 20px;font-weight: lighter;color: black">Pembuatan Peta Zona ZNT dengan tampilan WebGis</li>
+				<li>- Menggabungkan nilai hasil penilaian zona nilai tanah dengan data shapefile per desa menggunakan QGIS.</li>
+				<li>- Membuat tampilan data nilai zona tanah secara representatif yang dilengkapi dengan hover text, jika user ingin mengetahui properti di dalam bidang polygon.</li>
+				<li>- Meletakan data pada server agar mudah diakses secara bersamaan oleh banyak user dengan menggunakan IP server.</li>
+                <br>
+                <div class="container1">
+                <li><img src="img/znt.jpg" class="image"></li>
+                <div class="overlay">
+                <div class="text1"><a href="znt/index.html" target="_blank">Kunjungi Webgis</a></div>
+                </div>
+                </div>
+            </ul>
+            <ul class="work-list">
+			    <li style="font-family:'Bebas Neue', cursive; font-size: 20px;font-weight: lighter;color: black">Membuat Sistem Analisis Spasial Terintegrasi dengan PostgreSQL</li>
+				<li>- Membuat database yang dilengkapi dengan ekstensi PostGIS yang agar database bisa membaca data yang memiliki geometri.</li>
+				<li>- Membuat schema dalam database agar bisa membagi data shapefile desa per-kecamatan.</li>
+				<li>- Melakukan koneksi dengan QGIS agar data shp yang telah terhubung dengan database bisa digunakan untuk dianalisis oleh banyak user.</li>
+				<li>- Hasil analisis tersebut juga bisa langsung terupdate secara real time di tampilan WebGIS yang sudah ditetapkan.</li>
+				<br>
+				<li><img style="border-bottom-style: solid" src="img/server1.jpg"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<b style="font-family:'Bebas Neue', cursive; font-size: 25px;font-weight: lighter;color: black">Kemampuan</b>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / PHP / Javascript / Ajax</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>PostgreSQL</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>GIS</li>
+				<li>Qgis / Arcgis </li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-100">
+					<ul class="social list-flat right">
+						<li><a href="mailto:andalam2@gmail.com" target="_blank"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/andisuryaalam" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/suryaalam12" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=6287887961807" target="_blank"><i class="fa fa-phone"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
